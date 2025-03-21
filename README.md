@@ -36,3 +36,14 @@ Use docker compose command to start the required services:
 # Execute in Laradock directory
 docker compose up -d php-fpm-74 workspace-74 php-fpm-80 workspace-80 ...
 ```
+
+### 4. Use
+
+```diff
+location ~ \.php$ {
+    # ...
+-   fastcgi_pass php-fpm:9000;
++   fastcgi_pass php-fpm-80:9000;
+    # ...
+}
+```

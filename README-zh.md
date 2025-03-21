@@ -36,3 +36,14 @@ include:
 # 在 Laradock 目录下执行
 docker compose up -d php-fpm-74 workspace-74 php-fpm-80 workspace-80 ...
 ```
+
+### 4. 使用多版本 PHP
+
+```diff
+location ~ \.php$ {
+    # ...
+-   fastcgi_pass php-fpm:9000;
++   fastcgi_pass php-fpm-80:9000;
+    # ...
+}
+```
