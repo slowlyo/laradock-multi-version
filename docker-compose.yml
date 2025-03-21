@@ -1,0 +1,199 @@
+services:
+
+### PHP 7.4 ##################################
+  workspace-74:
+    extends:
+      file: ../docker-compose.yml
+      service: workspace
+    build:
+      args:
+        - LARADOCK_PHP_VERSION=7.4
+  php-fpm-74:
+    extends:
+      file: ../docker-compose.yml
+      service: php-fpm
+    build: 
+      args:
+        - LARADOCK_PHP_VERSION=7.4
+    volumes:
+      - ../php-fpm/php7.4.ini:/usr/local/etc/php/php.ini
+
+### PHP 8.0 ##################################
+  workspace-80:
+    extends:
+      file: ../docker-compose.yml
+      service: workspace
+    build:
+      args:
+        - LARADOCK_PHP_VERSION=8.0
+  php-fpm-80:
+    extends:
+      file: ../docker-compose.yml
+      service: php-fpm
+    build: 
+      args:
+        - LARADOCK_PHP_VERSION=8.0
+    volumes:
+      - ../php-fpm/php8.0.ini:/usr/local/etc/php/php.ini
+
+### PHP 8.1 ##################################
+  workspace-81:
+    extends:
+      file: ../docker-compose.yml
+      service: workspace
+    build:
+      args:
+        - LARADOCK_PHP_VERSION=8.1
+  php-fpm-81:
+    extends:
+      file: ../docker-compose.yml
+      service: php-fpm
+    build: 
+      args:
+        - LARADOCK_PHP_VERSION=8.1
+    volumes:
+      - ../php-fpm/php8.1.ini:/usr/local/etc/php/php.ini
+
+### PHP 8.2 ##################################
+  workspace-82:
+    extends:
+      file: ../docker-compose.yml
+      service: workspace
+    build:
+      args:
+        - LARADOCK_PHP_VERSION=8.2
+  php-fpm-82:
+    extends:
+      file: ../docker-compose.yml
+      service: php-fpm
+    build: 
+      args:
+        - LARADOCK_PHP_VERSION=8.2
+    volumes:
+      - ../php-fpm/php8.2.ini:/usr/local/etc/php/php.ini
+
+### PHP 8.3 ##################################
+  workspace-83:
+    extends:
+      file: ../docker-compose.yml
+      service: workspace
+    build:
+      args:
+        - LARADOCK_PHP_VERSION=8.3
+  php-fpm-83:
+    extends:
+      file: ../docker-compose.yml
+      service: php-fpm
+    build: 
+      args:
+        - LARADOCK_PHP_VERSION=8.3
+    volumes:
+      - ../php-fpm/php8.3.ini:/usr/local/etc/php/php.ini
+
+### PHP 8.4 ##################################
+  workspace-84:
+    extends:
+      file: ../docker-compose.yml
+      service: workspace
+    build:
+      args:
+        - LARADOCK_PHP_VERSION=8.4
+  php-fpm-84:
+    extends:
+      file: ../docker-compose.yml
+      service: php-fpm
+    build: 
+      args:
+        - LARADOCK_PHP_VERSION=8.4
+    volumes:
+      - ../php-fpm/php8.4.ini:/usr/local/etc/php/php.ini
+
+### PHP 5.6 ##################################
+  workspace-56:
+    extends:
+      file: ../docker-compose.yml
+      service: workspace
+    build:
+      args:
+        - LARADOCK_PHP_VERSION=5.6
+  php-fpm-56:
+    extends:
+      file: ../docker-compose.yml
+      service: php-fpm
+    build: 
+      args:
+        - LARADOCK_PHP_VERSION=5.6
+    volumes:
+      - ../php-fpm/php5.6.ini:/usr/local/etc/php/php.ini
+
+### PHP 7.0 ##################################
+  workspace-70:
+    extends:
+      file: ../docker-compose.yml
+      service: workspace
+    build:
+      args:
+        - LARADOCK_PHP_VERSION=7.0
+  php-fpm-70:
+    extends:
+      file: ../docker-compose.yml
+      service: php-fpm
+    build: 
+      args:
+        - LARADOCK_PHP_VERSION=7.0
+    volumes:
+      - ../php-fpm/php7.0.ini:/usr/local/etc/php/php.ini
+
+### PHP 7.1 ##################################
+  workspace-71:
+    extends:
+      file: ../docker-compose.yml
+      service: workspace
+    build:
+      args:
+        - LARADOCK_PHP_VERSION=7.1
+  php-fpm-71:
+    extends:
+      file: ../docker-compose.yml
+      service: php-fpm
+    build: 
+      args:
+        - LARADOCK_PHP_VERSION=7.1
+    volumes:
+      - ../php-fpm/php7.1.ini:/usr/local/etc/php/php.ini
+
+### PHP 7.2 ##################################
+  workspace-72:
+    extends:
+      file: ../docker-compose.yml
+      service: workspace
+    build:
+      args:
+        - LARADOCK_PHP_VERSION=7.2
+  php-fpm-72:
+    extends:
+      file: ../docker-compose.yml
+      service: php-fpm
+    build: 
+      args:
+        - LARADOCK_PHP_VERSION=7.2
+    volumes:
+      - ../php-fpm/php7.2.ini:/usr/local/etc/php/php.ini
+
+### PHP 7.3 ##################################
+  workspace-73:
+    extends:
+      file: ../docker-compose.yml
+      service: workspace
+    build:
+      args:
+        - LARADOCK_PHP_VERSION=7.3
+  php-fpm-73:
+    extends:
+      file: ../docker-compose.yml
+      service: php-fpm
+    build: 
+      args:
+        - LARADOCK_PHP_VERSION=7.3
+    volumes:
+      - ../php-fpm/php7.3.ini:/usr/local/etc/php/php.ini
