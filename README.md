@@ -1,5 +1,7 @@
 # Laradock Multi Version
 
+> [中文说明](https://github.com/slowlyo/laradock-multi-version/blob/master/README-zh.md)
+
 Enable Laradock to run multiple PHP versions simultaneously
 
 ## Features
