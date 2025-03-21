@@ -1,0 +1,32 @@
+# dnmp alias
+alias dphp='docker compose exec -it workspace bash'
+
+alias dphp56='docker compose exec -it workspace-56 bash'
+alias dphp70='docker compose exec -it workspace-70 bash'
+alias dphp71='docker compose exec -it workspace-71 bash'
+alias dphp72='docker compose exec -it workspace-72 bash'
+alias dphp73='docker compose exec -it workspace-73 bash'
+alias dphp74='docker compose exec -it workspace-74 bash'
+alias dphp80='docker compose exec -it workspace-80 bash'
+alias dphp81='docker compose exec -it workspace-81 bash'
+alias dphp82='docker compose exec -it workspace-82 bash'
+alias dphp83='docker compose exec -it workspace-83 bash'
+alias dphp84='docker compose exec -it workspace-84 bash'
+
+alias dmysql='docker compose exec -it mysql bash'
+alias dredis='docker compose exec -it redis bash'
+alias dnginx='docker compose exec -it nginx bash'
+
+# docker compose
+alias dc="docker-compose"
+
+# git: sync
+gitup () {
+    # default commit message
+    commit_message=${1:-"update"}
+
+    git pull &&
+    git add . &&
+    git commit -m "$commit_message" &&
+    git push
+}
